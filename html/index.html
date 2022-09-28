@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbitz Hotel Deals, Flights, Cheap Vacations & Rental Cars</title>
+    <link rel="stylesheet" href="../Styles/header.css" />
+    <link rel="stylesheet" href="../js/navbar.js" />
+    <link rel="stylesheet" href="../Styles/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <div id="header">
+                <div class="header-left">
+                    <div>
+                        <a href="index.html"><img id="logo" src="https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&amp;siteid=70201&amp;2" alt="orbitz logo" class="large-logo"></a>
+                    </div>
+                    <div>
+                        <div class="container">
+                            <button class="click"><p>More Travel&#160;&#160;&#160;<i class="fa-solid fa-chevron-down"></i></p></button>
+                            <div class="list">
+                                <button class="links"><i class="fa-sharp fa-solid fa-building"></i>&#160;&#160;&#160;&#160;Stays</button>
+                                <button class="links"><i class="fa-sharp fa-solid fa-plane"></i>&#160;&#160;&#160;&#160;Flights</button>
+                                <button class="links"><i class="fa-sharp fa-solid fa-suitcase"></i>&#160;&#160;&#160;&#160;Packages</button>
+                                <button class="links"><i class="fa-sharp fa-solid fa-car"></i>&#160;&#160;&#160;&#160;Cars</button>
+                                <button class="links"><i class="fa-solid fa-ship"></i>&#160;&#160;&#160;&#160;Cruises</button>
+                                <button class="links"><i class="fa-sharp fa-solid fa-ticket"></i>&#160;&#160;&#160;&#160;Things to do</button>
+                                <button class="links">Deals</button>
+                                <button class="links">Groups & meetings</button>
+                                <button class="links">Travel Blog</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div><p>Español</p></div>
+                    <div><p>List your property</p></div>
+                    <div><p>Support</p></div>
+                    <div><p>Trips</p></div>
+                    <div><a href=""><i class="fa-solid fa-user"></i>&#160;&#160;Sign in</a></div>
+                </div>
+        </div> 
+        <div id="navbar-bottom">
+            <img src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/01/ORB_Storefront_6_imgB_1400x600_20211028.jpg?impolicy=fcrop&w=900&h=225&q=mediumHigh" alt="">
+        </div>
+</body>
+</html> 
+<script>
+        let click = document.querySelector('.click');
+        let list = document.querySelector('.list');
+        click.addEventListener("click",()=>{
+            list.classList.toggle('newlist');
+        });
+</script>
