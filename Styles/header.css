@@ -6,16 +6,16 @@
 #header{
     background-color: #00253c;
     color: white;
-    height:6.6rem;
+    height:4.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 15.5rem;
-    padding-left: 15.5rem;
+    padding-right: 10rem;
+    padding-left: 10rem;
 }
 .header-left{
     display: flex;
-    width:28%;
+    width:26%;
     height: 100%;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     justify-content: space-between;
@@ -25,7 +25,7 @@
 }
 .header-left>div:nth-child(1){
     height: 100%;
-    width: 50%;
+    width: 53%;
     display: flex;
     align-items: center;
 }
@@ -41,14 +41,14 @@
     justify-content: space-between;
 }
 .header-right p{
-    font-size: 23px;
+    font-size: 0.9rem;
     font-weight: 600;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 .header-right>div:nth-child(5){
     display: flex;
     align-items:flex-end;
-    font-size: 23px;
+    font-size: 0.9rem;
     font-weight: 600;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
@@ -84,7 +84,7 @@ a{
     color: white;
 }
 .click,.links {
-    font-size: 23px;
+    font-size: 0.9rem;
     font-weight: 600;
     font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     border: none;
@@ -95,15 +95,15 @@ a{
 .click>p>i{
     margin-top: 3%;
     vertical-align: top;
-    font-size: 16px;
+    font-size: 80%;
 }
 .list {
-    margin-top: 1rem;
+    margin-top: 0.6rem;
     position: absolute;
     transform: scaleY(0);
     transform-origin: top;
     transition: 0.3s;
-    border-radius: 14px;
+    border-radius: 9px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: white;
 }
@@ -115,11 +115,11 @@ a{
 .links {
     background-color: white;
     color:black;
-    height: 4.3rem;
-    width: 33rem;
+    height: 2.8rem;
+    width: 24rem;
     text-align: left;
-    padding:0 3rem;
-    font-size: 1.5rem;
+    padding:0 2rem;
+    font-size: 1rem;
     cursor: pointer;
 }
 .links:hover{

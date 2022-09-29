@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Styles/signup.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <p><a href="login.html"><i class="fa-solid fa-arrow-left"></i></a></p>
+        <div>
+            <img src="https://www.orbitz.com/_dms/interstitial/logo.svg?locale=en_US&siteid=70201" alt="">
+        </div>
+    </div>
+        <form id="signup">
+                <h2>Create an account</h2>
+                <input id="email" type="text" placeholder="Email address" required="required">
+                <br> 
+                <input id="name" type="text" placeholder="First name" required="required">
+                <br>
+                <input type="text" placeholder="Last name" required="required">
+                <br>
+                <input id="pass" type="password" placeholder="Password" required="required">
+                <br>
+                <label for="checkbox" id="log"><input type="checkbox">&#160;&#160;Keep me signed in</label>
+                <br>
+                <p id="ab">Selecting this checkbox will keep you signed into your account on this device until you sign out. Do not select this on shared devices.</p>
+                <br>
+                <p id="tc">By creating an account, I agree to the Orbitz <a href="">Terms and Conditions</a>, <a href="">Privacy Statement</a> and <a href="">Orbitz Rewards Terms and Conditions.</a></p>
+                <input type="submit" value="Continue">
+                <p id="for">Already have an account? <a href="login.html">Sign In</a></p>
+                <p>or continue with</p>
+                <div id="logo">
+                    <div>
+                        <img src="https://a.travel-assets.com/egds/marks/apple.svg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://a.travel-assets.com/egds/marks/facebook.svg" alt="">
+                    </div>
+                </div>
+        </form>
+</body>
+<script src="./signup.js"></script>
+</html>

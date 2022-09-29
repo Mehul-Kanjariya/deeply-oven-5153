@@ -38,18 +38,42 @@
                     <div><p>List your property</p></div>
                     <div><p>Support</p></div>
                     <div><p>Trips</p></div>
-                    <div><a href=""><i class="fa-solid fa-user"></i>&#160;&#160;Sign in</a></div>
+                    <div><a href="login.html"><i class="fa-solid fa-user"></i>&#160;&#160;Sign in</a></div>
                 </div>
         </div> 
         <div id="navbar-bottom">
             <img src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/01/ORB_Storefront_6_imgB_1400x600_20211028.jpg?impolicy=fcrop&w=900&h=225&q=mediumHigh" alt="">
+            <div id="parent">
+                <div>
+                    <div id="more">
+                        <div>
+                            <button>Stays</button>
+                            <button>Flights</button>
+                            <button>Cars</button>
+                            <button>Packages</button>
+                            <button>Things to do</button>
+                            <button>Cruises</button>
+                        </div>
+                    </div>
+                    <div id="form">
+                        <div id="buttons">
+                            <button><i class="fa-solid fa-location-dot"></i>&#160;&#160;Going to</button>
+                            <button><i class="fa-regular fa-calendar"></i>&#160;&#160;Check-in<p class="sdate"></p></button>
+                            <button><i class="fa-regular fa-calendar"></i>&#160;&#160;Check-out<p class="edate"></p></button>
+                            <button><i class="fa-solid fa-user"></i>Travelers</button>
+                        </div>
+                        <div id="checkbox">
+                            <label id="flight" for=""><input type="checkbox">&#160;&#160;Add a flight</label>
+                            <label id="car" for=""><input type="checkbox">&#160;&#160;Add a car</label>
+                        </div>
+                        <div id="se">
+                                <button>Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div id="img"></div>
 </body>
+<script src="./index.js"></script>
 </html> 
-<script>
-        let click = document.querySelector('.click');
-        let list = document.querySelector('.list');
-        click.addEventListener("click",()=>{
-            list.classList.toggle('newlist');
-        });
-</script>
