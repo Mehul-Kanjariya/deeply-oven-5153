@@ -118,16 +118,256 @@ body{
     background-color: #c83259;
     border-radius: 2px;
 }
+#shdw,#features>div{
+    position: relative;
+}
+.shadow{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10rem;
+}
+.shadow>div{
+    width:32%;
+    background-color: transparent;
+    height: 100%;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.75) 0px -50px 36px -28px inset;
+}
 #img{
     margin-top: 10rem;
     display: flex;
+    justify-content: space-between;
     padding: 0 10rem;
 }
 #img>div{
-    width:31%;
-    margin: auto;
+    width:32%;
 }
-#img>div>img{
+#img>div>img,.offer>div>img{
     width: 100%;
-    box-shadow:inset 0 0 20px 0 rgba(0, 0, 0, 1);
+    height: 100%;
+}
+#features{
+    padding: 0 10rem;
+    margin-top:2.5rem;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.offer{
+    display: flex;
+    justify-content: space-between
+}
+.offer>div{
+    width:23.5%
+}
+.text{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: space-between;
+}
+.text>div{
+    width:23.5%;
+    height: 100%;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.95) 0px -50px 36px -28px inset;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.text>div>h3,.text>div>p{
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin-left: 1.5rem;
+}
+.text>div>p{
+    margin-bottom: .7rem;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+}
+.help{
+    margin-top: 3rem;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    padding: 0 10rem;
+}
+.help>h1{
+    margin:0;
+}
+.help>div{
+    display: flex;
+    justify-content: space-between;
+}
+.help>div>div{
+    width:30.6%;
+    border:1px solid black;
+    padding: 0.8rem 0.6rem;
+    background-color:white;
+}
+.help>div p{
+    margin-top: 2%;
+    font-size: 80%;
+}
+.help>div>div>div{
+    display: flex;
+    justify-content: space-between;
+}
+#travel{
+    padding: 0 10rem;
+    margin-top:2.5rem;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.vel{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+.vel>div{
+    width:49%;
+    height: 15rem;
+}
+.vel img{
+    width:100%;
+    height: 100%;
+}
+#travel>div{
+    position:relative;
+}
+.tips{
+    position:absolute;
+    top: 0;
+    right:0;
+    bottom:0;
+    left:0;
+    display: flex;
+    justify-content: space-between;
+}
+.tips>div{
+    width:49%;
+    height: 100%;
+    color:White;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+}    
+.tips>div>div{
+    padding:2rem;
+}
+.tips button{
+    margin-top: 1rem;
+    padding: 0.3rem 1rem;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+    font-size: 1rem;
+    font-weight: 600;
+    color:#0c5761;
+}
+#nu{
+    margin-top:4.5rem;
+    padding: 0 10rem;
+    display: flex;
+    justify-content: center;
+}
+.rewards{
+    margin-top: 3rem;
+    padding: 0 10rem;
+    height:21rem;
+    display: flex;
+}
+.rewards>div:nth-child(1){
+    width: 32.5%;
+    height: 100%;
+}
+.rewards img{
+    width: 100%;
+    height:100%; 
+}
+.rewards>div:nth-child(2){
+    height: 100%;
+    width: 52%;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: white;
+}
+.rewards>div:nth-child(2)>div:nth-child(1){
+    margin:1rem 0 1rem 1.5rem;
+}
+.rewards>div:nth-child(2)>div:nth-child(1)>h1{
+    font-size: 1.9rem;
+    line-height: 32px;
+}
+.rewards>div:nth-child(2)>div:nth-child(1)>div{
+    margin-top: 1%;
+    margin-bottom: 2.5%;
+    font-size: 0.9rem;
+    line-height: 2rem;
+}
+.rewards>div:nth-child(2)>div:nth-child(1) select, .rewards>div:nth-child(2)>div:nth-child(1) input,
+.rewards>div:nth-child(2)>div:nth-child(1) button{
+   padding: 0.7rem 1rem;
+   font-size: 1rem;
+   font-weight: 600;
+   font-family:apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.rewards>div:nth-child(2)>div:nth-child(1) input{
+    width:29.5%
+}
+.rewards>div:nth-child(2)>div:nth-child(1) select{
+    width:28%
+}
+.rewards>div:nth-child(2)>div:nth-child(1) button{
+    width:29.5%;
+    color:white;
+    background-color: #c83259;
+    border: none;
+}
+#but{
+    display: flex;
+    justify-content: space-between;
+}
+#but+p{
+    font-family:apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+}
+.rewards>div:nth-child(3){
+    padding: 1.5rem;
+    text-align: center;
+    font-family:apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+    background-color: white;
+    height:auto;
+}
+.rewards>div:nth-child(3) img{
+    height:50%;
+}
+#destination{
+    margin-top: 2%;
+    font-family:apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    padding: 0 10rem;
+}
+#destination>div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,auto);
+    gap:10px;
+    color: #4b4a4a;
+}
+#destination>div>div{
+    padding: 0.7rem;
+    height: auto;
+    background-color: white;
+}
+#destination h3{
+    width: fit-content;
+}
+#destination>div>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#destination i{
+    font-size: 10px;
 }

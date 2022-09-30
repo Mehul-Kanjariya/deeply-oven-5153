@@ -1,0 +1,43 @@
+#footer{
+    padding: 0 160px;
+    margin-top: 60px;
+}
+#footer>div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    color: #9e9b9b;
+}
+#footer ul {
+    list-style-type: none;
+    height: auto;
+}
+#footer li{
+    font-family:apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 17px 0;
+    font-size: 13px;
+    color: #0a8393;
+}
+#footer li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#footer li:nth-child(1){
+    font-size: 14px;
+    font-weight: bold;
+    color:black;
+}
+#footer li:nth-child(1):hover{
+    cursor:default;
+    text-decoration: none;
+}
+#footer p{
+    font-family:apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-align: center;
+    font-size: 13px;
+    color: #605e5e;
+    padding-top: 7px;
+}
+.copyright{
+    margin-top: 16px;
+    margin-bottom: 80px;
+}
