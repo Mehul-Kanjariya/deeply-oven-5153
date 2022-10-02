@@ -371,3 +371,41 @@ body{
 #destination i{
     font-size: 10px;
 }
+div.sticky{
+    color: #0c5761;
+    font-family:apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 18px;
+    padding:6px 15px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: none;
+    background-color: white;
+    float: right;
+}
+.fixed-btn{
+    position: fixed;
+    bottom:2.7%;
+    right: 1.7%;
+    background: white;
+    width: 88px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}
+  
+.fixed-btn p{
+    font-family:apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+    color:#098191;
+}
+.fixed-btn:hover,.fixed-btn>p:hover{
+    background:#098191;
+    color: white;
+    border-radius: 25px;
+}
+.fixed-btn:active{
+    box-shadow: 0  0;
+}

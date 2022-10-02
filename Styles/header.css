@@ -123,6 +123,14 @@ a{
     font-size: 1rem;
     cursor: pointer;
 }
+.links>a{
+    text-decoration: none;
+    color: black;
+}
+.links>a:hover{
+    color: #00a4bb;
+    fill: #00a4bb;
+}
 .links:hover{
     color: #00a4bb;
     fill: #00a4bb;
