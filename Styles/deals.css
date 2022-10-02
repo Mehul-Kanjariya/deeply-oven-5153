@@ -244,9 +244,13 @@ body{
 }
 #about>div{
     width: 32%;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 100;
+    background: white;
     font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+#about>div>p{
+    padding: 13px;
 }
 #terms{
     margin-top: 2%;

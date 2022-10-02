@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .accordion{
+            max-width: 800px;
+        }
+        .accordion .contentBx{
+            position: relative;
+            margin: 10px 20px;
+        }
+        .accordion .contentBx .label{
+            position: relative;
+            padding: 10px;
+            background:#2694af;
+            color:#ffff;
+            cursor:pointer;       
+        }
+        .accordion .contentBx .label::before{
+            content: "+";
+            position: absolute;
+            top:50%;
+            right:20px;
+            transform:translateY(-50%);
+            font-size:1.5em;
+        }
+        .accordion .contentBx.active .label::before{
+            content:"-";
+        }
+        .accordion .contentBx .content{
+            position: relative;
+            background: #fff;
+            height:0;
+            overflow:hidden;
+            transition:0.5s;
+            overflow-y: auto;
+        }
+        .accordion .contentBx.active .content{
+            height:150px;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="accordion">
+        <div class="contentBx">
+            <div class="label">List one</div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nulla reiciendis pariatur tempore, ipsam quibusdam assumenda animi quae nam nisi magni tempora, cupiditate incidunt ipsa?</p>
+            </div>
+        </div>
+        <div class="contentBx">
+            <div class="label">List two</div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nulla reiciendis pariatur tempore, ipsam quibusdam assumenda animi quae nam nisi magni tempora, cupiditate incidunt ipsa?</p>
+            </div>
+        </div>
+        <div class="contentBx">
+            <div class="label">List three</div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nulla reiciendis pariatur tempore, ipsam quibusdam assumenda animi quae nam nisi magni tempora, cupiditate incidunt ipsa?</p>
+            </div>
+        </div>
+        <div class="contentBx">
+            <div class="label">List four</div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nulla reiciendis pariatur tempore, ipsam quibusdam assumenda animi quae nam nisi magni tempora, cupiditate incidunt ipsa?</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    const accordion = document.getElementsByClassName(".contentBx");
+    for(let i=0; i<accordion.length; i++){
+        console.log(accordion[i])
+        accordion[i].addEventListner("click",function(){
+            console.log(1)
+            this.classList.toggle("active")
+        })
+    }
+</script>
